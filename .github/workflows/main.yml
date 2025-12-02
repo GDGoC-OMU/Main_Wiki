@@ -35,6 +35,9 @@ jobs:
       with:
         ref: antora
         submodules: true
+        fetch-depth: 0
+    - name: Fetch branches
+      run: git fetch --all
     - name: Configure Pages
       uses: actions/configure-pages@v5
       with:
