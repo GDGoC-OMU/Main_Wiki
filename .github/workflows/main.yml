@@ -4,14 +4,14 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - antora
+      - latest
     paths:
       - '**'
       - '.gitmodules'
   pull_request:
     types: [closed]
     branches:
-      - antora
+      - latest
     paths:
       - '**'
       - '.gitmodules'
@@ -33,7 +33,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4.2.2
       with:
-        ref: antora
+        ref: latest
         submodules: true
         fetch-depth: 0
     - name: Fetch branches
