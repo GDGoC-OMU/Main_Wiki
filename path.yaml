@@ -1,0 +1,23 @@
+# antora-playbook.yml
+site:
+  title: GDGoC OMU Wiki
+  url: https://gdgoce-omu.github.io/Main_Wiki # 必要に応じてサイトの公開 URL を設定
+  start_page: main::index.adoc # 開始ページを適切なコンポーネントとページに設定
+content:
+  sources:
+  - url: /home/runner/work/Main_Wiki/Main_Wiki # カレントディレクトリ (またはリポジトリの URL) を指定
+    start_path: components/main # コンポーネントのドキュメントが含まれるディレクトリ
+    branches: 'v*'
+  - url: /home/runner/work/Main_Wiki/Main_Wiki # カレントディレクトリ (またはリポジトリの URL) を指定
+    start_path: components/main # コンポーネントのドキュメントが含まれるディレクトリ
+    branches: 'latest'
+  - url: /home/runner/work/Main_Wiki/Main_Wiki
+    start_path: components/tutorial # 2nd コンポーネントのドキュメントが含まれるディレクトリ
+    branches: 'latest'
+ui:
+  bundle:
+    url: ./_ui/build/ui-bundle.zip
+    # url: ./ui-bundle.zip
+    snapshot: true
+# output:
+#   dir: ./public # ビルド成果物の出力先ディレクトリ (デフォルトは ./build/site)
