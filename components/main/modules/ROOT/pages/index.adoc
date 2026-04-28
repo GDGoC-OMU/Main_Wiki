@@ -1,3 +1,7 @@
 = GDGoC OMU Wiki
 
 Welcome to the GDGoC OMU Wiki.
+
+== はじめに
+
+ここでは、メンバーに対するマニュアルです。決して、関係者以外に見せないこと。

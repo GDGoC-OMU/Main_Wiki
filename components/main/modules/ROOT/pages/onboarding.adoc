@@ -1,0 +1,29 @@
+= メンバーになったら
+
+== やるべきこと
+
+
+=== 団体規約の承諾
+
+GDGoC OMUでは団体規約を定めています。詳しくは、こちらからご覧ください。
+
+link:https://drive.google.com/file/d/15c30_KD580iGMPjjN-DwP3FDlbRYm8V4/view?usp=sharing[団体規約]
+
+これを読んだ上で、こちらからフォームを送ってください。
+
+link:https://forms.gle/9pRRCZd1B6SW2t5f9[Forms]
+
+=== メンバー登録
+
+団体でメンバーとして登録するため、以下のフォームから登録お願いします。
+
+link:https://forms.gle/SdodcYYrFr6ixo39A[団体登録]
+
+=== GitHubアカウント
+
+GitHubアカウントを作成の上、以下のフォームに登録してください。GDGoC OMUのOrganizationに招待します。
+
+link:https://forms.gle/QCEeG1bxmrTmm1HX8[GitHub アカウント登録]
+
+招待後、メールが送られますので、適宜確認お願いします。
+
