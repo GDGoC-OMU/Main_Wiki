@@ -5,11 +5,25 @@ services:
       dockerfile: Dockerfile
     working_dir: /home/runner/work/Main_Wiki/Main_Wiki
     command: antora ./path.yml --stacktrace --clean --cache-dir=./.cache/antora
-    user: "${UID}"
+    user: "${UID:-1000}"
     environment:
       HOME: /home/runner/work/Main_Wiki/Main_Wiki
     volumes:
       - .:/home/runner/work/Main_Wiki/Main_Wiki:Z
     stdin_open: true
     tty: true
+    restart: 'no'
+  editor:
+    build:
+      context: ./editor
+      dockerfile: Dockerfile
+    working_dir: /app
+    environment:
+      WORKSPACE_ROOT: /workspace
+      DOCS_ROOT: /workspace/components/main/modules
+      PORT: 3000
+    volumes:
+      - .:/workspace:Z
+    ports:
+      - "3000:3000"
     restart: 'no'
