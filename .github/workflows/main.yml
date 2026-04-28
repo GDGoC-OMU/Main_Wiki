@@ -31,7 +31,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4.2.2
+      uses: actions/checkout@v6.0.2
       with:
         ref: latest
         submodules: true
@@ -39,11 +39,11 @@ jobs:
     - name: Fetch branches
       run: git fetch --all
     - name: Configure Pages
-      uses: actions/configure-pages@v5
+      uses: actions/configure-pages@v6.0.0
       with:
         enablement: true
     - name: Install Node.js
-      uses: actions/setup-node@v4.4.0
+      uses: actions/setup-node@v6.4.0
       with:
         node-version: '22'
     - name: Update submodules
@@ -66,9 +66,9 @@ jobs:
     - name: Generate Site
       run: npx antora path.yml
     - name: Upload Artifacts
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v5
       with:
         path: build/site
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5
