@@ -11,9 +11,6 @@ content:
   - url: /home/runner/work/Main_Wiki/Main_Wiki # カレントディレクトリ (またはリポジトリの URL) を指定
     start_path: components/main # コンポーネントのドキュメントが含まれるディレクトリ
     branches: 'latest'
-  - url: /home/runner/work/Main_Wiki/Main_Wiki
-    start_path: components/tutorial # 2nd コンポーネントのドキュメントが含まれるディレクトリ
-    branches: 'latest'
 ui:
   bundle:
     url: ./_ui/build/ui-bundle.zip
